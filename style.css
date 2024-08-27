@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fffbf2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    color: #4a4a4a;
+}
+
+/* Container Styling */
+.container {
+    background-color: #fff9e6;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+    border: 5px solid #ffcfb3;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff9aa2;
+    font-family: 'Pacifico', cursive;
+}
+
+/* Pet Image Styling */
+#pet img {
+    width: 180px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    border: 5px solid #ffcfb3;
+    background-color: #fff1e6;
+}
+
+#pet img:hover {
+    transform: scale(1.1);
+}
+
+/* Stats Styling */
+.stats {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1rem;
+}
+
+.stats p {
+    margin: 0;
+    padding: 10px;
+    background-color: #ffe5d9;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 90px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+/* Controls Styling */
+.controls {
+    margin-top: 20px;
+}
+
+.controls button {
+    margin: 5px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff9aa2;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.controls button:hover {
+    background-color: #ff7b87;
+    transform: translateY(-3px);
+}
+
+.controls button:active {
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .container {
+        padding: 20px;
+    }
+
+    #pet img {
+        width: 150px;
+    }
+
+    .stats p {
+        font-size: 0.85rem;
+        max-width: 70px;
+    }
+
+    .controls button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+}
